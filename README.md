@@ -27,6 +27,14 @@ Bu proje, PHP + MySQL tabanlı modern bir lise otomasyon sistemidir. Sistem içi
 
 5. Tarayıcıda `http://127.0.0.1:8000` adresine gidin.
 
+## GitHub Pages (Statik Demo)
+
+Depodaki `.github/workflows/pages.yml` workflow'u, `main` dalına gönderilen her değişiklikte `site/` klasörünü Jekyll ile derler ve GitHub Pages'e yayınlar. Elle çalıştırmak için GitHub Actions'tan **Build and deploy Jekyll site** workflow'unu seçip **Run workflow** kullanabilirsiniz.
+
+İlk yayın öncesinde GitHub deposunda **Settings > Pages > Build and deployment > Source** değerini **GitHub Actions** olarak ayarlayın. Workflow tamamlandığında Pages adresi aynı ayar sayfasında görünür.
+
+Pages sürümü, dört örnek rol paneli arasında geçiş sağlayan statik bir arayüz demosudur. Giriş bilgileri tarayıcıda herkese açık olduğundan gerçek kimlik doğrulama değildir; veriler kaydedilmez ve yönetim değişiklikleri yapılamaz. Tam PHP/MySQL uygulamasını çalıştırmak için PHP destekleyen bir sunucu kullanın. Workflow yalnızca `site/` içeriğini yayımlar; PHP kaynak dosyalarını Pages artifact'ine eklemez.
+
 ## Varsayılan Hesaplar
 
 - Müdür: `mudur` / `123456`

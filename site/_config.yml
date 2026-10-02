@@ -1,0 +1,7 @@
+title: Lise Otomasyon Sistemi
+description: Lise yönetimi için statik demo arayüzü
+lang: tr
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md

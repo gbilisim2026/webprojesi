@@ -1,0 +1,75 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lise Otomasyon Sistemi statik demo arayüzü">
+    <meta name="theme-color" content="#f5f7f2">
+    <title>{{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+    <script src="{{ '/assets/site.js' | relative_url }}" defer></script>
+</head>
+<body>
+    <main class="app-shell">
+        <section class="login-view" id="login-view" aria-labelledby="page-title">
+            <header class="masthead">
+                <a class="brand" href="{{ '/' | relative_url }}" aria-label="Lise Otomasyon ana sayfa">
+                    <span class="brand-mark" aria-hidden="true">L</span>
+                    <span>Lise Otomasyon</span>
+                </a>
+                <span class="edition"><span class="status-dot"></span> GitHub Pages demo</span>
+            </header>
+
+            <div class="login-layout">
+                <section class="intro">
+                    <p class="eyebrow">AKADEMİK YÖNETİM</p>
+                    <h1 id="page-title">Okulun günlük akışı,<br><span>tek bir yerde.</span></h1>
+                    <p class="intro-copy">Sınıflar, dersler ve öğretmen eşleştirmeleri için rol bazlı yönetim paneli.</p>
+                    <div class="demo-note">
+                        <span class="note-icon" aria-hidden="true">i</span>
+                        <p>Bu, GitHub Pages üzerinde çalışan statik bir demodur. Değişiklikler kaydedilmez; gerçek PHP ve MySQL uygulaması yerel sunucuda çalışır.</p>
+                    </div>
+                    <div class="school-stamp" aria-hidden="true">
+                        <span class="stamp-ring">LO</span>
+                        <span>ÖĞRENME<br>YÖNETİMİ</span>
+                    </div>
+                </section>
+
+                <section class="login-panel" aria-labelledby="login-title">
+                    <div class="panel-heading">
+                        <span class="panel-index">01 / OTURUM</span>
+                        <h2 id="login-title">Tekrar hoş geldiniz</h2>
+                        <p>Demo panellerinden birine giriş yapın.</p>
+                    </div>
+
+                    <form id="login-form" novalidate>
+                        <label for="username">Kullanıcı adı</label>
+                        <input id="username" name="username" autocomplete="username" placeholder="Örn. mudur" required>
+                        <label for="password">Şifre</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Demo şifresi" required>
+                        <p class="form-error" id="form-error" role="alert" hidden>Kullanıcı adı veya şifre hatalı.</p>
+                        <button class="submit-button" type="submit">Panele giriş <span aria-hidden="true">↗</span></button>
+                    </form>
+
+                    <div class="account-list">
+                        <p class="account-heading">DEMO HESAPLARI <span>Şifre: 123456</span></p>
+                        <button class="account-option" type="button" data-username="mudur"><span class="account-role">M</span><span><strong>Müdür</strong><small>mudur</small></span><span class="account-arrow" aria-hidden="true">↗</span></button>
+                        <button class="account-option" type="button" data-username="mudur_yardimci"><span class="account-role coral">MY</span><span><strong>Müdür Yardımcısı</strong><small>mudur_yardimci</small></span><span class="account-arrow" aria-hidden="true">↗</span></button>
+                        <button class="account-option" type="button" data-username="zeynep_ogretmen"><span class="account-role gold">Ö</span><span><strong>Öğretmen</strong><small>zeynep_ogretmen</small></span><span class="account-arrow" aria-hidden="true">↗</span></button>
+                        <button class="account-option" type="button" data-username="ayse_ogrenci"><span class="account-role blue">Ö</span><span><strong>Öğrenci</strong><small>ayse_ogrenci</small></span><span class="account-arrow" aria-hidden="true">↗</span></button>
+                    </div>
+                </section>
+            </div>
+            <footer class="page-footer"><span>© 2026 Lise Otomasyon</span><span>ÖRNEK ARAYÜZ · GERÇEK VERİ İÇERMEZ</span></footer>
+        </section>
+
+        <section class="dashboard-view" id="dashboard-view" hidden aria-live="polite"></section>
+    </main>
+</body>
+</html>
