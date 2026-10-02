@@ -1,5 +1,6 @@
 # Lise Otomasyon Sistemi
 
+Veritabanı eklendi.
 Bu proje, PHP + MySQL tabanlı modern bir lise otomasyon sistemidir. Sistem içinde müdür, müdür yardımcıları, öğretmenler ve öğrenciler için ayrı paneller bulunmaktadır. Müdür tüm yetkilere sahiptir, müdür yardımcıları öğretmenleri sınıflara atayabilir ve öğrenciler sınıf bazlı ders programlarına erişebilir.
 
 ## Özellikler
